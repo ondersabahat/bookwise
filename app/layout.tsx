@@ -4,10 +4,9 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { ReactNode } from "react";
 
+import { auth } from "@/auth";
 import { Toaster } from "@/components/ui/toaster";
 import { SessionProvider } from "next-auth/react";
-import { auth } from "@/auth";
-import { redirect } from "next/navigation";
 const ibmPlexSans = localFont({
   src: [
     { path: "/fonts/IBMPlexSans-Regular.ttf", weight: "400", style: "normal" },
